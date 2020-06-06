@@ -727,7 +727,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 15, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 20, 60 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1354,7 +1354,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (20*60)
+#define HOMING_FEEDRATE_XY (50*60)
 #define HOMING_FEEDRATE_Z  (15*60)
 
 // Validate that endstops are triggered on homing moves
